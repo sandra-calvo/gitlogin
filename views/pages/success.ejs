@@ -1,0 +1,32 @@
+<!-- views/success.ejs -->
+<!doctype html>
+<html>
+  <head>
+    <title>Github login app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- load bulma css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- load fontawesome -->
+      <style>
+          body        { padding-top:80px; }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+          <h1 class="text-primary  text-center"><span class="fa fa-github"></span> Github Profile</h1>
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="well">
+                <p>
+                  <strong>Name</strong>: <%= userData.name %><br>
+                  <strong>Username</strong>: <%= userData.login %><br>
+                    <strong>Repos URL</strong>: <%= userData.repos_url %><br>
+                    <strong>Public repos</strong>: <%= userData.public_repos %>
+
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
